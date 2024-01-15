@@ -8,7 +8,7 @@ let btn5 = document.getElementById('btn5');
 let btn6 = document.getElementById('btn6');
 let btnClose = document.getElementById("btnClose");
 
-
+//pressing the close button gets you back to main page
 btnClose.addEventListener("click", function () {
 	document.getElementById("infoPage").classList.replace("d-block", "d-none");
 	document.getElementById("homePage").classList.replace("d-none", "d-block");
@@ -17,52 +17,43 @@ btnClose.addEventListener("click", function () {
 
 //globals
 let activeTab = btn1;
-let url;
 
 //switching navbar tabs
 btn1.addEventListener("click", function () {
 	activeTab.classList.remove('active');
 	btn1.classList.add('active');
-	// contactPage.classList.replace('d-block', 'd-none')
-	// homePage.classList.replace('d-none', 'd-block')
 	activeTab = btn1
 	getGamesList("mmorpg")
-	// console.log("mmorp list starts now");
 });
 btn2.addEventListener("click", function () {
 	activeTab.classList.remove('active');
 	btn2.classList.add('active');
 	activeTab = btn2
 	getGamesList("shooter")
-	// console.log("shoot list starts now");
 });
 btn3.addEventListener("click", function () {
 	activeTab.classList.remove('active');
 	btn3.classList.add('active');
 	activeTab = btn3
 	getGamesList("sailing")
-	// console.log("saili list starts now");
 });
 btn4.addEventListener("click", function () {
 	activeTab.classList.remove('active');
 	btn4.classList.add('active');
 	activeTab = btn4
 	getGamesList("permadeath")
-	// console.log("perma list starts now");
 });
 btn5.addEventListener("click", function () {
 	activeTab.classList.remove('active');
 	btn5.classList.add('active');
 	activeTab = btn5
 	getGamesList("superhero")
-	// console.log("super list starts now");
 });
 btn6.addEventListener("click", function () {
 	activeTab.classList.remove('active');
 	btn6.classList.add('active');
 	activeTab = btn6
 	getGamesList("pixel")
-	// console.log("pixel list starts now");
 });
 
 
@@ -186,7 +177,4 @@ function displayDetails(gameInfo) {
 
 
 
-
-getGameDetails("517");
-// getGamesList("mmorpg");
-
+getGamesList("mmorpg");
