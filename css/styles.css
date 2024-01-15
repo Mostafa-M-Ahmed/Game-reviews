@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #019CD8;
+    /* border: 2px solid ; */
+    transition: all 0.3s ease-in-out;
+}
+.shadow-box{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1) !important;
+}
+.card{
+    cursor: pointer;
+    filter: grayscale(0.7);
+    transition: all 0.4s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+.titleGameDetail::after{
+    border-bottom: 100px solid yellow;
+}

@@ -1,0 +1,44 @@
+
+/* xs */
+@media screen and (min-width:0px) and (max-width:576px) {
+  
+}
+
+/* sm */
+@media screen and (min-width:576px) and (max-width:768px) {
+
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* md */
+@media screen and (min-width:768px) and (max-width:991px){
+
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* lg */
+@media screen and (min-width:992px) and (max-width:1200px){
+
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* xl */
+@media screen and (min-width:1201px) and (max-width:1399px){
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* xxl */
+@media screen and (min-width: 1400px){
+    .container {
+    	max-width: 1320px;
+    }
+
+}
