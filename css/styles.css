@@ -1,9 +1,12 @@
 a{
     text-decoration: none;
 }
-header img{
-    opacity: 0.5;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
+.bgIMG{
+    height: 30vh;
+    background-image: url(../imgs/wraper.png);
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #019CD8;
